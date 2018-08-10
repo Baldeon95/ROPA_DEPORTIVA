@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RopaDeportiva</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="Color">Color:</string>
+    <string name="Cantidad">Cantidad:</string>
+    <string name="Precio">Precio:</string>
+    <string name="Talla">Talla:</string>
+    <string name="Tela">Tela:</string>
+    <string name="Registros_de_productos">REGISTROS DE PRODUCTOS</string>
+    <string name="Siguiente">Siguiente</string>
+    <string name="Sexo">Sexo:</string>
+
+</resources>

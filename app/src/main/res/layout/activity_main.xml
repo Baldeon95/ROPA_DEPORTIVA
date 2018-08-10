@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803">
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="241dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="@string/Nombre"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextColor"
+            android:layout_width="232dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/Color"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+        <EditText
+            android:id="@+id/editTextCantidad"
+            android:layout_width="218dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/Cantidad"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextColor" />
+
+        <EditText
+            android:id="@+id/editTextPrecio"
+            android:layout_width="221dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/Precio"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCantidad" />
+
+        <EditText
+            android:id="@+id/editTextTalla"
+            android:layout_width="211dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:hint="@string/Talla"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSexo" />
+
+        <EditText
+            android:id="@+id/editTextTela"
+            android:layout_width="212dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/Tela"
+            android:inputType="textPersonName"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTalla" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGrabar"
+            android:layout_width="67dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="144dp"
+            android:onClick="buttonGuardarClick"
+            android:src="@android:drawable/ic_menu_save"
+            app:layout_constraintBottom_toTopOf="@+id/btneliminar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="239dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:text="@string/Registros_de_productos"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="256dp"
+            android:layout_marginTop="224dp"
+            android:background="@android:drawable/ic_menu_delete"
+            android:onClick="remove"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="147dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="304dp"
+            android:text="Siguiente"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="292dp"
+            android:background="@android:drawable/ic_menu_camera"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/Sexo"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrecio" />
+
+        <ImageView
+            android:id="@+id/ivimagen"
+            android:layout_width="154dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="380dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

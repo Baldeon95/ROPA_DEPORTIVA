@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/textview_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:text="@string/Nombre"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/textview_color"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_nombre"
+        android:layout_below="@+id/textview_nombre"
+        android:text="@string/Color"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_nombre"
+        android:layout_below="@+id/textview_color"
+        android:text="@string/Cantidad"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_precio"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_cantidad"
+        android:layout_below="@+id/textview_cantidad"
+        android:text="@string/Precio"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_sexo"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_nombre"
+        android:layout_below="@+id/textview_precio"
+        android:text="@string/Sexo"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_talla"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_nombre"
+        android:layout_below="@+id/textview_sexo"
+        android:text="@string/Talla"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_tela"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview_nombre"
+        android:layout_below="@+id/textview_talla"
+        android:text="@string/Tela"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonAñadir"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textview_precio"
+        android:layout_marginEnd="39dp"
+        android:text="Añadir"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

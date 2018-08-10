@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "495924722777",
+    "firebase_url": "https://ropadeportiva-5e6ff.firebaseio.com",
+    "project_id": "ropadeportiva-5e6ff",
+    "storage_bucket": "ropadeportiva-5e6ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495924722777:android:217d28e3f8b75010",
+        "android_client_info": {
+          "package_name": "com.example.ivonne.ropadeportiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495924722777-2p816ctl3lbe9relecan86rg799bffgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ivonne.ropadeportiva",
+            "certificate_hash": "f78f3102b10f7e434e62eb13d4655bb51fcd6922"
+          }
+        },
+        {
+          "client_id": "495924722777-0e04ilm7a3ijjtvo49solmftm1m0uim9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3ERWq1X7WsY9FvO0odQhnGEk6J1ydYnw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495924722777-0e04ilm7a3ijjtvo49solmftm1m0uim9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
